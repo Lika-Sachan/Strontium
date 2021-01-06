@@ -1,0 +1,29 @@
+.st-get-in-touch-form input {
+  border-bottom: 1px solid #92959F !important;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding: 15px 0 15px 5px;
+  width: 100%;
+}
+.st-get-in-touch-form input:focus {
+  outline: none;
+}
+.st-get-in-touch-form .hs-button {
+  background: #0A57FB;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  max-width: 191px;
+  padding: 11px 30px;
+  width: 100%;
+}
+.st-get-in-touch-form input::placeholder {
+  color: #C0DAF9;
+}

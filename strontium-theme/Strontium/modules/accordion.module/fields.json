@@ -1,0 +1,50 @@
+[ {
+  "id" : "f4df88e0-4991-1640-a24d-1404aeb3a945",
+  "name" : "accordion_toggle",
+  "label" : "accordion toggle",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "f416f81e-a043-d89c-63d4-b759a91917c1",
+    "name" : "accordion_label",
+    "label" : "accordion label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "What Is Your Question?"
+  }, {
+    "id" : "49091f40-1760-a2be-baa7-011267fe632d",
+    "name" : "accordion_content",
+    "label" : "accordion content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Vel eros donec ac odio tempor orci. Sapien et ligula ullamcorper malesuada proin libero. Purus sit amet luctus venenatis lectus magna fringilla. Posuere urna nec tincidunt praesent semper feugiat. Risus quis varius quam quisque id diam vel. Etiam tempor orci eu lobortis elementum nibh tellus. Pulvinar sapien et ligula ullamcorper. Vehicula ipsum a arcu cursus vitae congue.</p>"
+  }, {
+    "id" : "4f348916-99e5-b413-4159-f3a9ba7f72ed",
+    "name" : "open_by_default",
+    "label" : "open by default",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "accordion_label" : "What Is Your Question?",
+    "accordion_content" : "<p>Vel eros donec ac odio tempor orci. Sapien et ligula ullamcorper malesuada proin libero. Purus sit amet luctus venenatis lectus magna fringilla. Posuere urna nec tincidunt praesent semper feugiat. Risus quis varius quam quisque id diam vel. Etiam tempor orci eu lobortis elementum nibh tellus. Pulvinar sapien et ligula ullamcorper. Vehicula ipsum a arcu cursus vitae congue.</p>",
+    "open_by_default" : false
+  } ]
+} ]

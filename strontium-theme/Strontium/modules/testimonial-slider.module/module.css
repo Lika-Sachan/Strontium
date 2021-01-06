@@ -1,0 +1,10 @@
+.st-testimonial__owl-caraosel-item {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.st-testimonial__img svg {
+  width: 20px;
+  height: 15px;
+}

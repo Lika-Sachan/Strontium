@@ -1,0 +1,35 @@
+<div class="st-banner__Wrapper">
+  {% if module.bg_choice_group.banner_bg_choice == 'image' %}
+  <div class="st-banner-bg__img">
+    {% if module.background_image.banner_bg_img.src %}
+    {% set sizeAttrs = 'width="{{ module.background_image.banner_bg_img.width }}" height="{{ module.background_image.banner_bg_img.height }}"' %}
+    {% if module.background_image.banner_bg_img.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.background_image.banner_bg_img.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.background_image.banner_bg_img.max_width }}px; max-height: {{ module.background_image.banner_bg_img.max_height }}px"' %}
+    {% endif %}
+    {% set loadingAttr = module.background_image.banner_bg_img.loading != 'disabled' ? 'loading="{{ module.background_image.banner_bg_img.loading }}"' : '' %}
+    <img src="{{ module.background_image.banner_bg_img.src }}" alt="{{ module.background_image.banner_bg_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    <div class="st-banner__content-box" style="text-align:{{ module.content_alignment_group_.text_alignment }}">
+      <h1 class="st-banner__title">
+        {{ module.content_alignment_group_.content_title }}
+      </h1>
+      <div class="st-banner__text">
+        {{ module.content_alignment_group_.content_text }}
+      </div>
+    </div>
+  </div>
+  {% else if module.bg_choice_group.banner_bg_choice == 'bg-color' %}
+  <div class="st-banner-bg__color" style="background: {{ module.color_selector.bg_color_selector.color }}{{ module.color_selector.bg_color_selector.opacity }}; min-height: 500px;">
+    <div class="st-banner__color-box" style="text-align:{{ module.content_alignment_group_.text_alignment }}">
+      <h1 class="st-banner__title">
+        {{ module.content_alignment_group_.content_title }}
+      </h1>
+      <div class="st-banner__text">
+        {{ module.content_alignment_group_.content_text }}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>

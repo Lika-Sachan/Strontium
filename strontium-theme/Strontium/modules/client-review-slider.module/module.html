@@ -1,0 +1,39 @@
+<div class="st-client__slider-wrapper owl-carousel owl-theme">
+  <div class="st-client__item">
+    <div class="st-client__review" style="background:{{ module.client_review_color.color }}">
+      <div class="st-client__review-icon">
+        {% if module.client_review_icon.src %}
+        {% set sizeAttrs = 'width="{{ module.client_review_icon.width }}" height="{{ module.client_review_icon.height }}"' %}
+        {% if module.client_review_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.client_review_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.client_review_icon.max_width }}px; max-height: {{ module.client_review_icon.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = module.client_review_icon.loading != 'disabled' ? 'loading="{{ module.client_review_icon.loading }}"' : '' %}
+        <img src="{{ module.client_review_icon.src }}" alt="{{ module.client_review_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="st-client__review-text">
+        {{ module.client_review_text }}
+      </div>
+    </div>
+    <div class="st-client__info">
+      <div class="st-client__info-icon">
+        {% if module.client_info_icon.src %}
+        {% set sizeAttrs = 'width="{{ module.client_info_icon.width }}" height="{{ module.client_info_icon.height }}"' %}
+        {% if module.client_info_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif module.client_info_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.client_info_icon.max_width }}px; max-height: {{ module.client_info_icon.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = module.client_info_icon.loading != 'disabled' ? 'loading="{{ module.client_info_icon.loading }}"' : '' %}
+        <img src="{{ module.client_info_icon.src }}" alt="{{ module.client_info_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="st-client__info-name">
+        <h3>{{ module.client_info_name }}</h3>
+        {{ module.client_info_role }}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+defaultPortal: lika-sachan
+portals:
+  - name: lika-sachan
+    portalId: 7479791
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CMS72svtLhIEAA0ABBjvw8gDIMiL_wQo7ukMMhkAaan-qcZ5X5qxSdqmZP-QSJtlzLGYOJxROh0AAARBAAAAeAAAAAAAAAAAgAAAAAAAAAQAAMAHYEIZAGmp_qkcel8_TluEMKVKV4C25UNc8azMJA
+        expiresAt: '2021-01-06T20:49:58.219Z'
+    personalAccessKey: >-
+      CiRmZjA3YWI2Yi03NTFjLTRkM2YtOGU4My1iOGM0MWRjNTNlNzcQ78PIAxjIi_8EKhkABeaRgmHUEnAjgLPMRu28wa9lJDOFlMf-

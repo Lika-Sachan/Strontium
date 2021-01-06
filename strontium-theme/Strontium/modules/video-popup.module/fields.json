@@ -1,0 +1,116 @@
+[ {
+  "id" : "07dbd024-5421-5538-4228-6b9d8b1f158b",
+  "name" : "video_popup",
+  "label" : "video popup",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "efe661bf-d86e-998d-ae8e-0cb9aa9d0408",
+    "name" : "video_popup_image",
+    "label" : "video popup image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2016.png",
+      "alt" : "image 16",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 624,
+      "max_width" : 553,
+      "max_height" : 624
+    }
+  }, {
+    "id" : "e0f8417c-cee9-73d6-fff2-e5ba9a0e5ad4",
+    "name" : "video_popup_link",
+    "label" : "video popup link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "https://www.youtube.com/watch?v=mJeNghZXtMo"
+  }, {
+    "id" : "9bbac5bf-db00-1505-8301-401b4f53e520",
+    "name" : "video_play_button",
+    "label" : "video play button",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.0.10",
+    "type" : "icon",
+    "default" : {
+      "name" : "play-circle",
+      "unicode" : "f144",
+      "type" : "SOLID"
+    }
+  }, {
+    "id" : "7de03221-6b97-fdae-a4dc-18a8adf9236f",
+    "name" : "overlay_color",
+    "label" : "overlay color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#242A3F",
+      "opacity" : 60
+    }
+  }, {
+    "id" : "c99d2205-5dee-14c7-aec0-5b509ddb3bd7",
+    "name" : "image_border_radius",
+    "label" : "image border radius",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 0,
+    "max" : 50,
+    "step" : 1,
+    "type" : "number",
+    "default" : 10
+  }, {
+    "id" : "e0d8acc7-6710-da46-0124-8e04a4a95348",
+    "name" : "play_btn_icon_color",
+    "label" : "play btn icon color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "video_popup_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2016.png",
+      "alt" : "image 16",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 624,
+      "max_width" : 553,
+      "max_height" : 624
+    },
+    "video_popup_link" : "https://www.youtube.com/watch?v=mJeNghZXtMo",
+    "video_play_button" : {
+      "name" : "play-circle",
+      "unicode" : "f144",
+      "type" : "SOLID"
+    },
+    "overlay_color" : {
+      "color" : "#242A3F",
+      "opacity" : 60
+    },
+    "image_border_radius" : 10,
+    "play_btn_icon_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+} ]

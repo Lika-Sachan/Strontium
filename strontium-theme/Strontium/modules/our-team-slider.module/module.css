@@ -1,0 +1,57 @@
+.st-carousel__team-wrapper {
+  background: #242A3F;
+  padding: 58px 0 144px 0;
+  position: relative;
+}
+
+.st-carousel__team-container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.st-team__members-tab {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 557px;
+    padding: 51px 0 60px 0;
+    width: 100%;
+}
+
+.st-team__members-tab a {
+    color: #5B5F6F;
+    text-decoration: none;
+}
+
+#marketing,
+#design,
+#accounting {
+  display: none;
+}
+
+.st-team__slider-wrapper .owl-nav.disabled {
+  display: block!important;
+}
+.st-team__slider-wrapper .owl-nav.disabled .owl-prev,
+.st-team__slider-wrapper .owl-nav.disabled .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.st-team__slider-wrapper .owl-nav.disabled .owl-prev {
+  left: -40px;
+}
+
+.st-team__slider-wrapper .owl-nav.disabled .owl-next {
+  right: -40px;
+}
+
+.st-team__slider-wrapper .owl-nav.disabled .owl-prev span,
+.st-team__slider-wrapper .owl-nav.disabled .owl-next span {
+  color: #ffffff;
+  font-size: 40px;
+}

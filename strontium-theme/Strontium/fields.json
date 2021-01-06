@@ -1,0 +1,1077 @@
+[
+  {
+    "label":"Color and Font Setting",
+    "name":"color_font_setting",
+    "type":"group",
+    "children":[
+      {
+        "label":"Global Colors",
+        "name":"global_colors",
+        "type":"group",
+        "children":[
+          {
+            "label":"Primary Color",
+            "name":"primary_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":"true"
+              }
+
+            },
+            "default":{
+              "color":"#0A57FB"
+            }
+
+          },
+          {
+            "label":"Secondary Color",
+            "name":"secondary_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":"true"
+              }
+
+            },
+            "default":{
+              "color":"#242A3F"
+            }
+
+          },
+          {
+            "label":"Tertiary Color",
+            "name":"tertiary_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":"true"
+              }
+
+            },
+            "default":{
+              "color":"#74B2FD"
+            }
+
+          },
+          {
+            "label":"White Color",
+            "name":"white_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":"true"
+              }
+
+            },
+            "default":{
+              "color":"#F1F7FA"
+            }
+
+          },
+          {
+            "label" : "Links color",
+            "name" : "link_color",
+            "type" : "choice",
+            "default" : "primary",
+            "required" : false,
+            "locked" : false,
+            "display" : "select",
+            "choices" : [ 
+              [ "primary", "Primary Color" ],
+              [ "secondary", "Secondary Color" ],
+              [ "tertiary", "Tertiary Color" ],
+              [ "white", "White Color" ]
+
+            ]
+          },
+          {
+            "name" : "link_hover_color",
+            "label" : "Links color (on hover)",
+            "type" : "choice",
+            "default" : "primary",
+            "required" : false,
+            "locked" : false,
+            "display" : "select",
+            "choices" : [ 
+              [ "primary", "Primary Color" ],
+              [ "secondary", "Secondary Color" ],
+              [ "tertiary", "Tertiary Color" ],
+              [ "white", "White Color" ]
+            ]
+          }
+        ]
+      },
+      {
+        "label":"Global Fonts",
+        "name":"global_fonts",
+        "type":"group",
+        "children":[
+          {
+            "label":"Heading/Title font",
+            "name":"primary_font",
+            "type":"font",
+            "visibility":{
+              "hidden_subfields":{
+                "size":true,
+                "styles":true,
+                "color":true
+              }
+            },
+            "load_external_fonts":true,
+            "default":{
+              "color":"#040404",
+              "font":"Poppins",
+              "font_set":"GOOGLE"
+            }
+          },
+          {
+            "label":"Body Font",
+            "name":"secondary_font",
+            "type":"font",
+            "visibility":{
+              "hidden_subfields":{
+                "size":true,
+                "styles":true,
+                "color":true
+              }
+            },
+            "load_external_fonts":true,
+            "default":{
+              "color":"#92959F",
+              "font":"Roboto",
+              "font_set":"GOOGLE"
+            }
+          }
+        ]
+      },
+      {
+        "label":"Typography",
+        "name":"typography",
+        "type":"group",
+        "children":[
+          {
+            "label":"Body text",
+            "name":"body_text",
+            "type":"font",
+            "visibility":{
+              "hidden_subfields":{
+                "styles":true
+              }
+            },
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.secondary_font.color",
+                "font":"theme.color_font_setting.global_fonts.secondary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "color":"#808080",
+              "size":18,
+              "size_unit":"px"
+            }
+          },
+          {
+            "label":"Body Font Size (Mobile View)",
+            "name":"body_text_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":30,
+            "min":10,
+            "default":16
+          },
+          {
+            "label":"Heading one (H1)",
+            "name":"heading_one",
+            "type":"font",
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color",
+                "font":"theme.color_font_setting.global_fonts.primary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "size":60,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          },
+          {
+            "label":"Heading one (H1 Mobile View)",
+            "name":"heading_one_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":80,
+            "min":10,
+            "default":45
+          },
+          {
+            "label":"Heading two (H2)",
+            "name":"heading_two",
+            "type":"font",
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color",
+                "font":"theme.color_font_setting.global_fonts.primary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "size":45,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          },
+          {
+            "label":"Heading two (H2 Mobile View)",
+            "name":"heading_two_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":80,
+            "min":10,
+            "default":35
+          },
+          {
+            "label":"Heading three (H3)",
+            "name":"heading_three",
+            "type":"font",
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color",
+                "font":"theme.color_font_setting.global_fonts.primary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "size":40,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          },
+          {
+            "label":"Heading three (H3 Mobile View)",
+            "name":"heading_three_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":80,
+            "min":10,
+            "default":30
+          },
+          {
+            "label":"Heading four (H4)",
+            "name":"heading_four",
+            "type":"font",
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color",
+                "font":"theme.color_font_setting.global_fonts.primary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "size":30,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          },
+          {
+            "label":"Heading four (H4 Mobile View)",
+            "name":"heading_four_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":80,
+            "min":10,
+            "default":25
+          },
+          {
+            "label":"Heading five (H5)",
+            "name":"heading_five",
+            "type":"font",
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "font":"theme.color_font_setting.global_fonts.primary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "color":"#000000",
+              "size":22,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          },
+          {
+            "label":"Heading five (H5 Mobile View)",
+            "name":"heading_five_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":80,
+            "min":10,
+            "default":20
+          },
+          {
+            "label":"Heading six (H6)",
+            "name":"heading_six",
+            "type":"font",
+            "load_external_fonts":true,
+            "default":{
+              "color":"#808080",
+              "size":18,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"400"
+            }
+          },
+          {
+            "label":"Heading six (H6 Mobile View)",
+            "name":"heading_six_mobile",
+            "type":"number",
+            "display":"slider",
+            "max":80,
+            "min":10,
+            "default":22
+          },
+          {
+            "label":"Link color",
+            "name":"link_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            },
+            "default":{
+              "color":"#ed2935"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label":"Layout Setting",
+    "name":"layout_setting",
+    "type":"group",
+    "children":[
+      {
+        "label":"Website header",
+        "name":"header",
+        "type":"group",
+        "children":[
+          {
+            "label":"Background color",
+            "name":"background_color",
+            "type":"color",
+            "default":{
+              "color":"#FFFFFF",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Menu link typography",
+            "name":"menu_link_typography",
+            "type":"font",
+            "visibility":{
+              "hidden_subfields":{
+                "styles":true,
+                "color":false
+              }
+            },
+            "load_external_fonts":true,
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_colors.secondary_color.color",
+                "font":"theme.color_font_setting.global_fonts.primary_font.font",
+                "font_set":"theme.color_font_setting.global_fonts.primary_font.font_set"
+              }
+            },
+            "default":{
+              "color":"#040404",
+              "size":14,
+              "size_unit":"px"
+            }
+          },
+          {
+            "label":"Menu Background color",
+            "name":"menu_background_color",
+            "type":"color",
+            "default":{
+              "color":"#FFFFFF",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Menu Hover Background color",
+            "name":"menu_hover_background_color",
+            "type":"color",
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            },
+            "default":{
+              "color":"#ed2935",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Menu Hover color",
+            "name":"menu_hover_color",
+            "type":"color",
+            "default":{
+              "color":"#FFFFFF",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Child menu border color",
+            "name":"child_menu_border_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "default":{
+              "color":"#494A52"
+            }
+          }
+        ]
+      },
+      {
+        "label":"Footer",
+        "name":"footer",
+        "type":"group",
+        "children":[
+          {
+            "label":"Footer Background color",
+            "name":"background_color",
+            "type":"color",
+            "default":{
+              "color":"#fafafa",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Footer Copyright Background color",
+            "name":"background_copyright_color",
+            "type":"color",
+            "default":{
+              "color":"#F8FAFC",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Footer Heading color",
+            "name":"footer_heading_color",
+            "type":"color",
+            "default":{
+              "color":"#040404",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Footer Text color",
+            "name":"text_color",
+            "type":"color",
+            "default":{
+              "color":"#808080",
+              "opacity":100
+            }
+          }
+        ]
+      },
+      {
+        "label":"Spacing",
+        "name":"spacing",
+        "type":"group",
+        "children":[
+          {
+            "label":"Maximum content width",
+            "name":"max_width",
+            "type":"number",
+            "display":"slider",
+            "max":2500,
+            "min":900,
+            "default":1240
+          }
+        ]
+      },
+      {
+        "label":"Buttons",
+        "name":"buttons",
+        "type":"group",
+        "children":[
+          {
+            "label":"Background color",
+            "name":"background_color",
+            "type":"color",
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_colors.primary_color.color"
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            },
+            "default":{
+              "opacity":100
+            }
+          },
+          {
+            "label":"Hover Background color",
+            "name":"hover_background_color",
+            "type":"color",
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_colors.primary_color.color"
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            },
+            "hidden_subfields":{
+              "opacity":true
+            },
+            "default":{
+              "color":"#ed2935"
+            }
+          },
+          {
+            "label":"Text color",
+            "name":"text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "default":{
+              "color":"#FFFFFF"
+            }
+          },
+          {
+            "label":"Hover Text color",
+            "name":"hover_text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "default":{
+              "color":"#FFFFFF"
+            }
+          },
+          {
+            "label":"Border width",
+            "name":"border_width",
+            "type":"number",
+            "display":"slider",
+            "max":20,
+            "min":0,
+            "default":1
+          },
+          {
+            "label":"Border color",
+            "name":"border_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            }
+          },
+          {
+            "label":"Hover Border color",
+            "name":"hover_border_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            },
+            "default":{
+              "color":"#ed2935"
+            }
+          },
+          {
+            "label":"Corner radius",
+            "name":"border_radius",
+            "type":"number",
+            "display":"slider",
+            "max":100,
+            "min":0,
+            "default":6
+          },
+          {
+            "label":"Horizontal padding",
+            "name":"horizontal_padding",
+            "type":"number",
+            "display":"slider",
+            "max":100,
+            "min":0,
+            "default":53
+          },
+          {
+            "label":"Vertical padding",
+            "name":"vertical_padding",
+            "type":"number",
+            "display":"slider",
+            "max":100,
+            "min":0,
+            "default":15
+          }
+        ]
+      },
+      {
+        "label":"Forms",
+        "name":"forms",
+        "type":"group",
+        "children":[
+          {
+            "label":"Header background color",
+            "name":"header_background_color",
+            "type":"color",
+            "default":{
+              "color":"#FAFAFA",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Header text color",
+            "name":"header_text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.secondary_color"
+            }
+          },
+          {
+            "label":"Label color",
+            "name":"label_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color"
+              }
+            }
+          },
+          {
+            "label":"Help text color",
+            "name":"help_text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color"
+              }
+            }
+          },
+          {
+            "label":"Field border color",
+            "name":"field_border_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "default":{
+              "color":"#D1D6DC"
+            }
+          },
+          {
+            "label":"Field focus border color",
+            "name":"field_focus_border_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            }
+          }
+        ]
+      },
+      {
+        "label":"Tables",
+        "name":"tables",
+        "type":"group",
+        "children":[
+          {
+            "label":"Header background color",
+            "name":"header_background_color",
+            "type":"color",
+            "inherited_value":{
+              "default_value_path":"theme.color_font_setting.global_colors.primary_color"
+            },
+            "default":{
+              "opacity":100
+            }
+          },
+          {
+            "label":"Header text color",
+            "name":"header_text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "default":{
+              "color":"#FFFFFF"
+            }
+          },
+          {
+            "label":"Body background color",
+            "name":"body_background_color",
+            "type":"color",
+            "default":{
+              "color":"#FFFFFF",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Body text color",
+            "name":"body_text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color"
+              }
+            }
+          },
+          {
+            "label":"Footer background color",
+            "name":"footer_background_color",
+            "type":"color",
+            "default":{
+              "color":"#FFFFFF",
+              "opacity":100
+            }
+          },
+          {
+            "label":"Footer text color",
+            "name":"footer_text_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color"
+              }
+            }
+          },
+          {
+            "label":"Border color",
+            "name":"border_color",
+            "type":"color",
+            "visibility":{
+              "hidden_subfields":{
+                "opacity":true
+              }
+            },
+            "inherited_value":{
+              "property_value_paths":{
+                "color":"theme.color_font_setting.global_fonts.primary_font.color"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label":"Blog Setting",
+    "type":"group",
+    "name":"blog_setting",
+    "children":[
+      {
+        "id":"is_blog_banner_img",
+        "name":"is_blog_banner_img",
+        "label":"Enable Banner Image",
+        "required":false,
+        "locked":false,
+        "type":"boolean",
+        "default":true
+      },
+      {
+        "label":"Blog Banner",
+        "type":"group",
+        "name":"blog_banner",
+        "visibility":{
+          "controlling_field":"is_blog_banner_img",
+          "controlling_value_regex":"true",
+          "operator":"EQUAL",
+          "access":null,
+          "hidden_subfields":null
+        },
+        "children":[
+          {
+            "name":"blog_banner_image",
+            "label":"Banner Image",
+            "required":false,
+            "locked":false,
+            "responsive":true,
+            "resizable":false,
+            "show_loading":true,
+            "type":"image",
+            "default":{
+              "size_type":"auto",
+              "src": "https://f.hubspotusercontent40.net/hubfs/4921395/raw_assets/public/WebTrappers/images/blog-banner-img.jpg",
+              "alt":"Blog Banner",
+              "loading":"lazy"
+            }
+          }
+        ]
+      },
+      {
+        "name":"is_blog_popular_post",
+        "label":"Enable Popular Post",
+        "required":false,
+        "locked":false,
+        "type":"boolean",
+        "default":true
+      }
+    ]
+  },
+  {
+    "label":"System Page Setting",
+    "type":"group",
+    "name":"system_page_setting",
+    "children":[
+      {
+        "label":"Error Page Setting (404)",
+        "type":"group",
+        "name":"error_page_not_found_setting",
+        "children":[
+          {
+            "id":"is_error_page_not_found_banner_img",
+            "name":"is_error_page_not_found_banner_img",
+            "label":"Enable Error Image",
+            "required":false,
+            "locked":false,
+            "type":"boolean",
+            "default":true
+          },
+          {
+            "label":"Error Banner(404)",
+            "type":"group",
+            "name":"error_page_not_found_banner",
+            "visibility":{
+              "controlling_field":"is_error_page_not_found_banner_img",
+              "controlling_value_regex":"true",
+              "operator":"EQUAL",
+              "access":null,
+              "hidden_subfields":null
+            },
+            "children":[
+              {
+                "name":"error_page_not_found_banner_image",
+                "label":"error Page Image (404)",
+                "required":false,
+                "locked":false,
+                "responsive":true,
+                "resizable":false,
+                "show_loading":true,
+                "type":"image",
+                "default":{
+                  "size_type":"auto",
+                  "src":"https://f.hubspotusercontent40.net/hubfs/4921395/raw_assets/public/WebTrappers/images/error404.svg",
+                  "alt":"Error Banner",
+                  "loading":"lazy"
+                }
+              }
+            ]
+          },
+          {
+            "label":"Error Page Title typography (404)",
+            "name":"error_page_not_found_typography",
+            "type":"font",
+            "visibility":{
+              "hidden_subfields":{
+                "styles":true,
+                "color":false
+              }
+            },
+            "default":{
+              "size":40,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          }
+        ]
+      },
+      {
+        "label":"Error Page Setting (500)",
+        "type":"group",
+        "name":"error_page_server_error_setting",
+        "children":[
+          {
+            "id":"is_error_page_server_error_banner_img",
+            "name":"is_error_page_server_error_banner_img",
+            "label":"Enable Error Image",
+            "required":false,
+            "locked":false,
+            "type":"boolean",
+            "default":true
+          },
+          {
+            "label":"Error Banner(500)",
+            "type":"group",
+            "name":"error_page_server_error_banner",
+            "visibility":{
+              "controlling_field":"is_error_page_server_error_banner_img",
+              "controlling_value_regex":"true",
+              "operator":"EQUAL",
+              "access":null,
+              "hidden_subfields":null
+            },
+            "children":[
+              {
+                "name":"error_page_server_error_banner_image",
+                "label":"error Page Image (500)",
+                "required":false,
+                "locked":false,
+                "responsive":true,
+                "resizable":false,
+                "show_loading":true,
+                "type":"image",
+                "default":{
+                  "size_type":"auto",
+                  "src":"https://f.hubspotusercontent40.net/hubfs/4921395/raw_assets/public/WebTrappers/images/500error.png",
+                  "alt":"Error Banner",
+                  "loading":"lazy"
+                }
+              }
+            ]
+          },
+          {
+            "label":"Error Page Title typography (500)",
+            "name":"error_page_server_error_typography",
+            "type":"font",
+            "visibility":{
+              "hidden_subfields":{
+                "styles":true,
+                "color":false
+              }
+            },
+            "default":{
+              "size":40,
+              "size_unit":"px",
+              "styles":{
+                "text-decoration":"none"
+              },
+              "variant":"300"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label":"Thankyou Page Setting",
+    "type":"group",
+    "name":"thankyou_page_setting",
+    "children":[
+      {
+        "id":"is_thankyou_banner_img",
+        "name":"is_thankyou_banner_img",
+        "label":"Enable Thankyou Image",
+        "required":false,
+        "locked":false,
+        "type":"boolean",
+        "default":true
+      },
+      {
+        "label":"Thankyou Banner",
+        "type":"group",
+        "name":"thankyou_banner",
+        "visibility":{
+          "controlling_field":"is_thankyou_banner_img",
+          "controlling_value_regex":"true",
+          "operator":"EQUAL",
+          "access":null,
+          "hidden_subfields":null
+        },
+        "children":[
+          {
+            "name":"thankyou_banner_image",
+            "label":"Thankyou Page Image",
+            "required":false,
+            "locked":false,
+            "responsive":true,
+            "resizable":false,
+            "show_loading":true,
+            "type":"image",
+            "default":{
+              "size_type":"auto",
+              "src":"https://f.hubspotusercontent40.net/hubfs/4921395/raw_assets/public/WebTrappers/images/thankyou.png",
+              "alt":"Thankyou Banner",
+              "loading":"lazy"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

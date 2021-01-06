@@ -1,0 +1,45 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html , body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #242A3F;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 72px;
+  text-align: left;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: left;
+
+}
+
+.st-banner__Wrapper .st-banner-bg__img,
+.st-banner-bg__color {
+  position: relative;
+}
+
+.st-banner__Wrapper .st-banner__content-box,
+.st-banner__color-box {
+  left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,15 @@
+<div class='st-icon-box' style="text-align: {{ module.icon_alignment }};">
+  {% if module.icon_or_image == 'icons' %}
+  <div class='st-icon__container' data-fill='{{ module.icon_color }}'>
+    {% icon	name="{{ module.icon_field.name }}" style="{{ module.icon_field.type }}" unicode="{{ module.icon_field.unicode }}" %}
+  </div>
+  {% else if module.icon_or_image == 'images' %}
+  <div class='st-image__container'>
+    <img class='st-icon-box-img' fill='{{ module.icon_color }}' data-src='{{module.icon_box_image.src}}'>
+  </div>
+  {% endif %}
+  <div class='st-icon-box__text'>
+    <h5>{{ module.icon_box_header }}</h5>
+    {{ module.icon_box_text }}
+  </div>
+</div>

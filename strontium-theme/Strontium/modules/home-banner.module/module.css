@@ -1,0 +1,23 @@
+.st-home__banner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.st-home__banner-wrapper .st-home__banner-content {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.st-home__banner-wrapper .st-home__banner-image {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.st__cta-fill {
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 11px 29px;
+  text-decoration: none;
+}

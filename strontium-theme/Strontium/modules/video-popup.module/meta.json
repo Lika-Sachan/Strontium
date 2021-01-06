@@ -1,0 +1,21 @@
+{
+  "global" : false,
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 39913468873,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../css/magnific-popup/_magnific-popup.css",
+    "name" : "_magnific-popup.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/jquery.js",
+    "name" : "jquery.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../js/magnific-popup/magnific-popup-min.js",
+    "name" : "magnific-popup-min.js"
+  } ],
+  "is_available_for_new_content" : true
+}

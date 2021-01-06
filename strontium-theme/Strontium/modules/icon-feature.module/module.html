@@ -1,0 +1,24 @@
+<div class="st-feature-group-wrapper">
+  {% for item in module.feature_group %}
+  <div class="st-feature-group">
+    <div class="st-feature-group__icon">
+      {% if item.feature_icon.src %}
+      {% set sizeAttrs = 'width="{{ item.feature_icon.width }}" height="{{ item.feature_icon.height }}"' %}
+      {% if item.feature_icon.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif item.feature_icon.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.feature_icon.max_width }}px; max-height: {{ item.feature_icon.max_height }}px"' %}
+      {% endif %}
+      {% set loadingAttr = item.feature_icon.loading != 'disabled' ? 'loading="{{ item.feature_icon.loading }}"' : '' %}
+      <img src="{{ item.feature_icon.src }}" alt="{{ item.feature_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+    <div class="st-feature-group__content">
+      <h4 class="st-icon-heading">
+        {{ item.feature_heading }}
+      </h4>
+      {{ item.feature_content }}
+    </div>  
+  </div>
+  {% endfor %}
+</div>

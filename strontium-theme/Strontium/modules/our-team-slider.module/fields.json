@@ -1,0 +1,275 @@
+[ {
+  "id" : "2c1f1b63-9b92-78c4-f3e2-d94ad3fd8b82",
+  "name" : "content_alignment",
+  "label" : "Content Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "left" ], [ "right", "right" ], [ "center", "center" ] ],
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "68f2456b-29bf-1ef5-b1f1-39500de66875",
+  "name" : "team_additional_info",
+  "label" : "team Additional Info",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "LOREM IPSUM"
+}, {
+  "id" : "e5fed1d8-6d24-da36-35d9-23ec4524ab0d",
+  "name" : "team_section_heading",
+  "label" : "Team Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Meet Our Team"
+}, {
+  "id" : "22132484-15c5-95e1-69ff-f81fe7f2af2e",
+  "name" : "slider_repeater",
+  "label" : "Slider Repeater",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "db9bb5b7-5e8e-5c3b-081b-a33e18afe436",
+    "name" : "active_slider",
+    "label" : "Active Slider",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "active"
+  }, {
+    "id" : "065e9449-1a1e-280a-0cbb-8ff250207aa5",
+    "name" : "team_member_group",
+    "label" : "Team Member Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "37b32c51-6b07-9960-023a-734e455a652c",
+      "name" : "team_members",
+      "label" : "Team Members",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "active_slider" : "active",
+    "team_member_group" : [ {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    } ]
+  }, {
+    "active_slider" : "active",
+    "team_member_group" : [ {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    } ]
+  }, {
+    "active_slider" : "active",
+    "team_member_group" : [ {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    } ]
+  }, {
+    "active_slider" : "active",
+    "team_member_group" : [ {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    }, {
+      "team_members" : {
+        "size_type" : "auto",
+        "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%209.png",
+        "alt" : "image 9",
+        "loading" : "disabled",
+        "width" : 362,
+        "height" : 528,
+        "max_width" : 362,
+        "max_height" : 528
+      }
+    } ]
+  } ]
+} ]

@@ -1,0 +1,35 @@
+<div class="st-carousel__team-wrapper" style="text-align: {{ module.content_alignment }}">
+  <div class="st-carousel__team-container">
+    <p class="st-team__Additional-text">
+      {{ module.team_additional_info }}
+    </p>
+    <h2 class="st-team__section-heading">
+      {{ module.team_section_heading }}
+    </h2>
+    <div class="st-team__members-tab">
+      <a href="#" rel="development">Development</a>
+      <a href="#" rel="marketing">Marketing</a>
+      <a href="#" rel="design">Design</a>
+      <a href="#" rel="accounting">Accounting</a>
+    </div>
+
+    {% for item in module.slider_repeater %}
+    <div id="{{ item.active_slider }}" class="owl-carousel owl-theme st-team__slider-wrapper">
+      {% for item2 in item.team_member_group %}
+      <div class="item">
+        {% if item2.team_members.src %}
+        {% set sizeAttrs = 'width="{{ item2.team_members.width }}" height="{{ item2.team_members.height }}"' %}
+        {% if item2.team_members.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item2.team_members.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item2.team_members.max_width }}px; max-height: {{ item2.team_members.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = item2.team_members.loading != 'disabled' ? 'loading="{{ item2.team_members.loading }}"' : '' %}
+        <img src="{{ item2.team_members.src }}" alt="{{ item2.team_members.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div> 
+</div>

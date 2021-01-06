@@ -1,0 +1,70 @@
+[ {
+  "id" : "932e868f-4737-49b3-1431-fab0215a14c9",
+  "name" : "banner_heading",
+  "label" : "Banner Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We Build Strong And Beautiful themes,Just Like Strontium."
+}, {
+  "id" : "51c01d5b-1ab7-5383-7230-0c01c5ebf448",
+  "name" : "Banner_Paragraph",
+  "label" : "Banner Paragraph",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"
+}, {
+  "id" : "3267d1e3-8ae9-98a1-9d7a-f35c79ca9232",
+  "name" : "banner_image",
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/Frame.png",
+    "alt" : "Strontium-Icon",
+    "loading" : "disabled",
+    "width" : 417,
+    "height" : 594,
+    "max_width" : 417,
+    "max_height" : 594
+  }
+}, {
+  "id" : "869eb108-1c4b-595e-4066-a489735da5f1",
+  "name" : "btn_text_color",
+  "label" : "Btn Text Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "cbe23757-3ee6-d1d3-423e-f3c9898af0ac",
+  "name" : "btn_bg_color",
+  "label" : "Btn Bg Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "1ee5219e-3695-7440-a38a-98441652992b",
+  "name" : "learn_more",
+  "label" : "Learn more",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Need some more info? <a href=\"https://www.google.com\" rel=\"noopener\" target=\"_blank\">learn more.</a>"
+} ]

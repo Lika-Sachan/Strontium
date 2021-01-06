@@ -1,0 +1,143 @@
+[ {
+  "id" : "95992e1f-bc0f-d147-5dc5-7748b8870c81",
+  "name" : "bg_choice_group",
+  "label" : "bg-choice-group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e3a8f9af-6794-d2ea-4519-518c2722c335",
+    "name" : "banner_bg_choice",
+    "label" : "banner-bg-choice",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "image", "image" ], [ "bg-color", "bg-color" ] ],
+    "type" : "choice",
+    "default" : "image"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "banner_bg_choice" : "image"
+  }
+}, {
+  "id" : "bc2d253f-aa31-07e1-9705-56ddb649bda2",
+  "name" : "background_image",
+  "label" : "background-image",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "e3a8f9af-6794-d2ea-4519-518c2722c335",
+    "controlling_value_regex" : "image",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "446cc08c-3007-4295-a1d6-3538bffb8f82",
+    "name" : "banner_bg_img",
+    "label" : "banner-bg-img",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "banner_bg_img" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "disabled"
+    }
+  }
+}, {
+  "id" : "b045d7b4-144e-5348-fcf6-c7ec2f96a25a",
+  "name" : "color_selector",
+  "label" : "color-selector",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "e3a8f9af-6794-d2ea-4519-518c2722c335",
+    "controlling_value_regex" : "bg-color",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "children" : [ {
+    "id" : "1402e7db-9245-fdb5-ed2e-d2e51e542681",
+    "name" : "bg_color_selector",
+    "label" : "Bg-Color-Selector",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "bg_color_selector" : {
+      "color" : "#ffffff",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "53b838fd-dc25-f2cf-3ae3-5ec1713af3bd",
+  "name" : "content_alignment_group_",
+  "label" : "content-alignment-group ",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c5c7997f-d8cb-4483-2609-b51ed270050b",
+    "name" : "content_title",
+    "label" : "content-title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Contact Us"
+  }, {
+    "id" : "c7f6e702-1331-8edb-241c-25eae4fafdd9",
+    "name" : "content_text",
+    "label" : "content-text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p style=\"font-size: 16px;\">Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Viverra mauris in aliquam sem fringilla. Tristique senectus et netus et malesuada fames ac.</p>"
+  }, {
+    "id" : "0a5c05f4-6709-d819-8b07-0174a37feebf",
+    "name" : "text_alignment",
+    "label" : "text-alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "left" ], [ "right", "right" ], [ "center", "center" ] ],
+    "type" : "choice",
+    "default" : "left"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "content_title" : "Contact Us",
+    "content_text" : "<p style=\"font-size: 16px;\">Imperdiet proin fermentum leo vel orci porta non pulvinar neque. Viverra mauris in aliquam sem fringilla. Tristique senectus et netus et malesuada fames ac.</p>",
+    "text_alignment" : "left"
+  }
+} ]
