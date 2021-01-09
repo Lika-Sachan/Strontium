@@ -1,0 +1,32 @@
+.st-process {
+  position: relative;
+}
+.st-process__list {
+  flex: 0 0 40%;
+  margin-right: 20px;
+  max-width: calc(40% - 14px);
+  padding-right: 60px;
+}
+.st-process__list:nth-child(2n) {
+  margin-left: auto;
+
+}
+.st-process__list:nth-child(2n)::after {
+  position: absolute;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='249' height='248' fill='none' stroke='#74B2FD' viewBox='0 0 249 248'><path d='M40.4126 6.00096C42.8695 55.7485 63.0948 104.782 101.089 142.776C141.331 183.018 193.958 203.327 246.701 203.701' stroke='#74B2FD'  stroke-linecap='round' stroke-dasharray='5 20'></path></svg>");
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.st-process__list-image span {
+  border-radius: 50%;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+.st-process__list-image span img {
+  vertical-align: middle;
+}

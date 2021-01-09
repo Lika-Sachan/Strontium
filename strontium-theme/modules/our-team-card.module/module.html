@@ -1,0 +1,75 @@
+<div class="st-team-card" style="text-align:{{ module.alignment }};">
+  <div class="st-team-card__image">
+    {% if module.team_card_image.src %}
+    {% set sizeAttrs = 'width="{{ module.team_card_image.width }}" height="{{ module.team_card_image.height }}"' %}
+    {% if module.team_card_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.team_card_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.team_card_image.max_width }}px; max-height: {{ module.team_card_image.max_height }}px"' %}
+    {% endif %}
+    {% set loadingAttr = module.team_card_image.loading != 'disabled' ? 'loading="{{ module.team_card_image.loading }}"' : '' %}
+    <img src="{{ module.team_card_image.src }}" alt="{{ module.team_card_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    <div class="st-team-card__hover">
+      {{ module.team_card_hover_text }}
+      <div class="st-team-card__hover-icon">
+        {% icon
+	name="{{ module.team_card_hover_icon.name }}"
+	style="{{ module.team_card_hover_icon.type }}"
+	unicode="{{ module.team_card_hover_icon.unicode }}"
+	icon_set="{{ module.team_card_hover_icon.icon_set }}"
+%}
+      </div>
+    </div>
+  </div>  
+  <div class="st-team-card__content">
+    <div class="st-team-card__name">
+      <h4>{{ module.team_card_name }}</h4>
+      {{ module.team_card_role }}
+    </div>
+    <div class="st-team-card__icon-wrap">
+      {% for item in module.team_card_icon_group %}
+      {% if module.icon_or_image == 'image' %}
+      <div class="st-team-card__icon-image">
+        {% if item.team_card_icon_image.src %}
+        {% set sizeAttrs = 'width="{{ item.team_card_icon_image.width }}" height="{{ item.team_card_icon_image.height }}"' %}
+        {% if item.team_card_icon_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.team_card_icon_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.team_card_icon_image.max_width }}px; max-height: {{ item.team_card_icon_image.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = item.team_card_icon_image.loading != 'disabled' ? 'loading="{{ item.team_card_icon_image.loading }}"' : '' %}
+        <img src="{{ item.team_card_icon_image.src }}" alt="{{ item.team_card_icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% else if module.icon_or_image == 'icon' %}
+      <div class="st-team-card__icon">
+        {% icon
+		name="{{ item.team_card_icon.name }}"
+		style="{{ item.team_card_icon.type }}"
+		unicode="{{ item.team_card_icon.unicode }}"
+		icon_set="{{ item.team_card_icon.icon_set }}"
+	%}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% set bgColor1= module.team_overlay_color_1.color %}
+{% set bgOpacity1= module.team_overlay_color_1.opacity %}
+{% if bgOpacity1<100 %}
+{% set bgColorOpacity1=(bgOpacity1/100)%}
+{% endif %}
+{% set bgColor2= module.team_overlay_color_2.color %}
+{% set bgOpacity2= module.team_overlay_color_2.opacity %}
+{% if bgOpacity2<100 %}
+{% set bgColorOpacity2=(bgOpacity2/100)%}
+{% endif %}
+{% require_css %}
+<style>
+  .st-team-card__hover {
+    background: linear-gradient(180deg, rgba({{bgColor1|convert_rgb}},{{ bgColorOpacity1}}), rgba({{bgColor2|convert_rgb}},{{ bgColorOpacity2}}));    
+  }   
+</style>
+{% end_require_css %}

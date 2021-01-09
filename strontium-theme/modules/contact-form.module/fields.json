@@ -1,0 +1,50 @@
+[ {
+  "id" : "9f2635c2-c844-b648-aec0-f916a71ff119",
+  "name" : "contact_form",
+  "label" : "Contact Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "a65c1de8-c0cd-4482-b31f-aaac3c78984e",
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form.",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "a2eb0596-945d-e27a-bc38-b5ff07aa0cf5",
+  "name" : "attach_file_icon",
+  "label" : "Attach File Icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.14.0",
+  "type" : "icon",
+  "default" : {
+    "name" : "Paperclip",
+    "unicode" : "f0c6",
+    "type" : "SOLID"
+  }
+}, {
+  "id" : "8d422d5a-6ab7-c44e-aeda-e8a8699441c8",
+  "name" : "attach_file_label",
+  "label" : "Attach File Label",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Attach file"
+}, {
+  "id" : "9a56730d-6155-a697-8282-3c12bae144b4",
+  "name" : "icon_color",
+  "label" : "Icon Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0A57FB",
+    "opacity" : 100
+  }
+} ]

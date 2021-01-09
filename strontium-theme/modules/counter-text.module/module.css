@@ -1,0 +1,21 @@
+.st-counter__list {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.st-counter__list-item {
+  flex: 0 0 30%;
+}
+.st-counter__count-number span {
+  display: inline-block;
+  line-height: 1;
+
+}
+
+.st-counter__list-item {
+  flex: 0 0 31%;
+  text-align: center;
+  margin: 0 10px 30px 0;
+}

@@ -1,0 +1,131 @@
+[ {
+  "id" : "0de1b979-7d6d-4b94-f893-2bab81789b47",
+  "name" : "service_image",
+  "label" : "service_image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%208.png",
+    "alt" : "image 8",
+    "loading" : "disabled",
+    "width" : 219,
+    "height" : 232,
+    "max_width" : 219,
+    "max_height" : 232
+  }
+}, {
+  "id" : "bcf30b9b-afd2-7691-0a13-c042de0a2401",
+  "name" : "alignment",
+  "label" : "Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "Left" ], [ "right", "Right" ], [ "center", "Center" ] ],
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "3bcfeaf4-8458-e6b4-0096-069448f868ca",
+  "name" : "service_icon_or_image",
+  "label" : "service_icon_or_image",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "icons", "icons" ], [ "image", "image" ] ],
+  "type" : "choice",
+  "default" : "image"
+}, {
+  "id" : "64dd7969-f819-33d2-797f-031ce4dbad35",
+  "name" : "service_icon",
+  "label" : "service_icon",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "3bcfeaf4-8458-e6b4-0096-069448f868ca",
+    "controlling_value_regex" : "image",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/award.svg",
+    "alt" : "award",
+    "loading" : "disabled",
+    "width" : 40,
+    "height" : 40,
+    "max_width" : 40,
+    "max_height" : 40
+  }
+}, {
+  "id" : "2844c152-cf76-cf58-fe9f-453b25d1fb73",
+  "name" : "service_icon_1",
+  "label" : "service_icon_1",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "3bcfeaf4-8458-e6b4-0096-069448f868ca",
+    "controlling_value_regex" : "icons",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "icon_set" : "fontawesome-5.14.0",
+  "type" : "icon",
+  "default" : {
+    "name" : "Star",
+    "unicode" : "f005",
+    "type" : "REGULAR"
+  }
+}, {
+  "id" : "d775a313-ed9c-217a-8aec-18877cba866c",
+  "name" : "service_text",
+  "label" : "service_text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "velit esse cillum"
+}, {
+  "id" : "fc2be2c0-8a37-f073-0875-96a49b5c4efc",
+  "name" : "service_color_direction",
+  "label" : "service_color_direction",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "to bottom", "top to bottom" ], [ "to right", "left to right" ], [ "to bottom right", "top left to bottom right" ], [ "to bottom left", "top right to bottom left" ] ],
+  "type" : "choice",
+  "default" : "to bottom"
+}, {
+  "id" : "f63a0431-7000-0f2e-5d22-066d8bc13b5e",
+  "name" : "service_overlay_color_1",
+  "label" : "service_overlay_color-1",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#242a3f",
+    "opacity" : 25
+  }
+}, {
+  "id" : "1bdd538e-7dee-f295-3e1f-4c7db9281d8c",
+  "name" : "service_overlay_color_2",
+  "label" : "service_overlay_color-2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#242a3f",
+    "opacity" : 80
+  }
+} ]

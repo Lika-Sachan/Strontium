@@ -1,0 +1,305 @@
+<!--
+  templateType: "page"
+  isAvailableForNewContent: true
+-->
+{% extends './layouts/base.html' %}
+
+{% block body %}
+<main class="body-container-wrapper">
+  {% dnd_area 'dnd_area' class='body-container body-container--home', label='Main section' %}
+   {# Banner section #}
+ {% dnd_section 
+		  padding={
+				'top': 0,
+				'bottom': 0,
+				'left': 0,
+				'right': 0
+			},
+			full_width=true
+		%}
+      {% dnd_module 'sp_banner' 
+				path='../modules/home-banner-slider',
+				label="Hero Banner",
+				width=12
+			%}
+				
+			{% end_dnd_module %}
+		{% end_dnd_section %}
+  {# End banner section #}
+   {# Verical tab section #}
+   {% dnd_section
+       vertical_alignment='MIDDLE',
+        padding={
+            'top': 100,
+            'right': 15,
+            'bottom': 100,
+            'left': 15
+          },
+        background_color={
+        r: 241,
+        g: 241,
+        b: 241,
+        a: 1
+      },
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path='@hubspot/rich_text',
+           
+          %}
+            {% module_attribute 'html' %}
+              <div style="text-align: left;width:100%;max-width:400px">
+                <h2>Excepteur sint occaecat cupidatat</h2>
+                </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+          {% dnd_row %}
+        
+          {% dnd_module path='../modules/vertical-tabs',
+            
+          %}
+      
+          {% end_dnd_module %}
+  
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}    
+    {# End of vertical tab section #}
+  {# How it works section #}
+   {% dnd_section
+       vertical_alignment='MIDDLE',
+        padding={
+            'top': 100,
+            'right': 15,
+            'bottom': 100,
+            'left': 15
+          },
+        background_color={
+        r: 241,
+        g: 241,
+        b: 241,
+        a: 1
+      },
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path='@hubspot/rich_text',
+           
+          %}
+            {% module_attribute 'html' %}
+              <div style="text-align: center;width:100%;">
+                <h2>How it Works</h2>
+                </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+          {% dnd_row %}
+        
+          {% dnd_module path='../modules/process',
+            
+          %}
+      
+          {% end_dnd_module %}
+  
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}    
+    {# End of how it works  section #}
+  {# Seuvice listing #}
+   {% dnd_section
+       vertical_alignment='MIDDLE',
+        padding={
+            'top': 100,
+            'right': 15,
+            'bottom': 100,
+            'left': 15
+          },
+        background_color={
+        r: 36,
+        g: 42,
+        b: 63,
+        a: 1
+      },
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path='@hubspot/rich_text',
+           
+          %}
+            {% module_attribute 'html' %}
+              <div style="text-align: center;width:100%;">
+                <h2 style="color: #ffffff">What Our Clients Say</h2>
+                </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+          {% dnd_row %}
+        
+          {% dnd_module path='../modules/client-review-slider',
+            
+          %}
+      
+          {% end_dnd_module %}
+  
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}    
+    {# End of how it works  section #}
+   {# Who we are section #}
+  {% dnd_section %}
+  {% dnd_column %}
+  {% dnd_row %}
+  {% dnd_module path='@hubspot/rich_text' %}
+  {% module_attribute "html" %}
+  <div style="text-align: center;width:100%;margin: 0 auto">
+    <h2>Explore New Positions</h2>
+  </div>        
+  {% end_module_attribute %}
+  {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% dnd_row 
+   padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 0,
+            'left': 0
+          }
+  %}
+  {% dnd_column width=6, offset=0, 
+  padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 20,
+            'left': 0
+          }
+  %}
+  {% dnd_row %}
+ {% dnd_module path='../modules/career-accordion',
+
+            
+          %}
+  {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+
+  {% dnd_column width=6, offset=6,
+   padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 20,
+            'left': 0
+          }
+  %}
+  {% dnd_row 
+              padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 0,
+            'left': 0
+          }
+            %}
+  {% dnd_module path='../modules/career-accordion',
+
+            
+          %}
+  {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% end_dnd_row %}
+  {% dnd_row 
+   padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 0,
+            'left': 0
+          }
+  %}
+  {% dnd_column width=6, offset=0, 
+  padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 20,
+            'left': 0
+          }
+  %}
+  {% dnd_row %}
+ {% dnd_module path='../modules/career-accordion',
+
+            
+          %}
+  {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+
+  {% dnd_column width=6, offset=6,
+   padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 20,
+            'left': 0
+          }
+  %}
+  {% dnd_row 
+              padding={
+            'top': 0,
+            'right': 0,
+            'bottom': 0,
+            'left': 0
+          }
+            %}
+  {% dnd_module path='../modules/career-accordion',
+
+            
+          %}
+  {% end_dnd_module %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% end_dnd_row %}
+  {% end_dnd_column %}
+  {% end_dnd_section %}
+  {# End of FAQ Section #}
+  {# Check Our Milestones#}
+   {% dnd_section
+       vertical_alignment='MIDDLE',
+        padding={
+            'top': 100,
+            'right': 15,
+            'bottom': 100,
+            'left': 15
+          },
+        background_color={
+        r: 255,
+        g: 255,
+        b: 255,
+        a: 1
+      },
+    %}
+      {% dnd_column %}
+        {% dnd_row %}
+          {% dnd_module path='@hubspot/rich_text',
+           
+          %}
+            {% module_attribute 'html' %}
+              <div style="text-align: center;width:100%;">
+                <h2 style="padding: 0 0 100px 0">Check Our Milestones</h2>
+                </div>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+          {% dnd_row %}
+        
+          {% dnd_module path='../modules/counter-text',
+            
+          %}
+      
+          {% end_dnd_module %}
+  
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}    
+    {# End of Check our milestones section #}
+
+  {% end_dnd_area %}
+</main>
+{% endblock body %}

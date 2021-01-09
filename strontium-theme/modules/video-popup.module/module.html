@@ -1,0 +1,36 @@
+<div class="st-video-popup" >
+  <div class="st-video-popup__img-wrapper">
+    {% if module.video_popup.video_popup_image.src %}
+    {% set sizeAttrs = 'width="{{ module.video_popup.video_popup_image.width }}" height="{{ module.video_popup.video_popup_image.height }}"' %}
+    {% if module.video_popup.video_popup_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.video_popup.video_popup_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.video_popup.video_popup_image.max_width }}px; max-height: {{ module.video_popup.video_popup_image.max_height }}px"' %}
+    {% endif %}
+    {% set loadingAttr = module.video_popup.video_popup_image.loading != 'disabled' ? 'loading="{{ module.video_popup.video_popup_image.loading }}"' : '' %}
+    <img src="{{ module.video_popup.video_popup_image.src }}"  alt="{{ module.video_popup.video_popup_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    {% set bgColor= module.video_popup.overlay_color.color %}
+    {% set bgOpacity= module.video_popup.overlay_color.opacity %}
+    {% if bgOpacity<100 %}
+    {% set bgColorOpacity=(bgOpacity/100)%}
+    {% endif %}
+
+    <div class="st-video-popup__img-overlay" style="background-color:rgba({{bgColor|convert_rgb}},{{ bgColorOpacity}}"></div>
+    <a href="{{ module.video_popup.video_popup_link }}">
+      <div class="st-video-popup__play-button" style="fill:{{ module.video_popup.play_btn_icon_color.color }}">
+        {% icon name="{{ module.video_popup.video_play_button.name }}" style="{{ module.video_popup.video_play_button.type }}" unicode="{{ module.video_popup.video_play_button.unicode }}" icon_set="{{ module.video_popup.video_play_button.icon_set }}" %}
+      </div>
+    </a>
+  </div>
+</div>
+{% require_css %}
+<style>
+  .st-video-popup {
+    border-radius: {{ module.video_popup.image_border_radius }}px;
+  }
+  .st-video-popup__img-wrapper a img {
+    border-radius: {{ module.video_popup.image_border_radius }}px;
+  }
+</style>
+{% end_require_css %}

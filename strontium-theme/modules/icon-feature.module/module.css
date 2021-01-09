@@ -1,0 +1,19 @@
+.st-icon-feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+.st-icon-feature__item {
+  align-items: center;
+  display: flex;
+  flex: 0 0 50%;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+.st-icon-feature__item-icon {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+.st-icon-feature__item-content{
+  flex: 0 0 40%;
+  max-width: 40%;
+}

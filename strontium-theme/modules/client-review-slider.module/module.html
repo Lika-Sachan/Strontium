@@ -1,0 +1,48 @@
+<div class="st-client-slider owl-carousel owl-theme">
+  {% for item in module.client_review_slider %}
+  <div  class="st-client-slider__item">
+    <div id="{{ item.client_item_id }}" class="st-client-slider__review">
+      <div class="st-client-slider__review-icon">
+        {% if item.client_review_icon.src %}
+        {% set sizeAttrs = 'width="{{ item.client_review_icon.width }}" height="{{ item.client_review_icon.height }}"' %}
+        {% if item.client_review_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.client_review_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.client_review_icon.max_width }}px; max-height: {{ item.client_review_icon.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = item.client_review_icon.loading != 'disabled' ? 'loading="{{ item.client_review_icon.loading }}"' : '' %}
+        <img src="{{ item.client_review_icon.src }}" alt="{{ item.client_review_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="st-client-slider__review-text">
+        {{ item.client_review_text }}
+      </div>
+    </div>
+    <div class="st-client-slider__info">
+      <div class="st-client-slider__info-icon">
+        {% if item.client_info_icon.src %}
+        {% set sizeAttrs = 'width="{{ item.client_info_icon.width }}" height="{{ item.client_info_icon.height }}"' %}
+        {% if item.client_info_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.client_info_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.client_info_icon.max_width }}px; max-height: {{ item.client_info_icon.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = item.client_info_icon.loading != 'disabled' ? 'loading="{{ item.client_info_icon.loading }}"' : '' %}
+        <img src="{{ item.client_info_icon.src }}" alt="{{ item.client_info_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="st-client-slider__info-name">
+        <h3>{{ item.client_info_name }}</h3>
+        {{ item.client_info_role }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% require_css %}
+<style>
+  #st-client__item_1 {
+    background:{{ module.client_review_color.color }};
+  }   
+</style>
+{% end_require_css %}

@@ -1,0 +1,237 @@
+[ {
+  "id" : "c97407f7-24e6-4154-21cb-3b31cdf94c34",
+  "name" : "alignment",
+  "label" : "alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "left" ], [ "center", "center" ], [ "right", "right" ] ],
+  "type" : "choice",
+  "default" : "center"
+}, {
+  "id" : "714406c0-b7b2-aea4-a90c-40d72107bfd0",
+  "name" : "team_card_image",
+  "label" : "team_card_image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto_custom_max",
+    "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2037.png",
+    "alt" : "image 37",
+    "loading" : "disabled",
+    "width" : 362,
+    "height" : 320,
+    "max_width" : 362,
+    "max_height" : 320
+  }
+}, {
+  "id" : "582b45b6-2659-d86b-23cb-448a14523797",
+  "name" : "team_card_hover_text",
+  "label" : "team_card_hover_text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View More"
+}, {
+  "id" : "99c27cad-e2d4-d705-925b-5a06ab332457",
+  "name" : "team_card_hover_icon",
+  "label" : "team_card_hover_icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.14.0",
+  "type" : "icon",
+  "default" : {
+    "name" : "arrow-right",
+    "unicode" : "f061",
+    "type" : "SOLID"
+  }
+}, {
+  "id" : "42398c88-9f1b-36dc-9fd8-c2e82f4e74c2",
+  "name" : "team_overlay_color_1",
+  "label" : "team_overlay_color_1",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#242a3f",
+    "opacity" : 25
+  }
+}, {
+  "id" : "68602e8b-360a-928c-b362-8b844fd5cddd",
+  "name" : "team_overlay_color_2",
+  "label" : "team_overlay_color_2",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#242a3f",
+    "opacity" : 80
+  }
+}, {
+  "id" : "bc636f8a-3a4c-8fe4-8e6e-0820b24e1515",
+  "name" : "team_card_name",
+  "label" : "team_card_name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Sydney Macfarlane"
+}, {
+  "id" : "bf3e1fb3-8609-f134-de83-0aeb2bc7b134",
+  "name" : "team_card_role",
+  "label" : "team_card_role",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CEO"
+}, {
+  "id" : "b5c3c30e-49d3-e012-9a79-a7f61149db5e",
+  "name" : "icon_or_image",
+  "label" : "icon or image",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "icon", "icon" ], [ "image", "image" ] ],
+  "type" : "choice",
+  "default" : "image"
+}, {
+  "id" : "ea4a808c-e49c-a454-0723-2ab085b59547",
+  "name" : "team_card_icon_group",
+  "label" : "team_card_icon_group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "705fb171-d5bb-49e9-86b9-f4dfc1df5851",
+    "name" : "team_card_icon_image",
+    "label" : "team_card_icon_image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "b5c3c30e-49d3-e012-9a79-a7f61149db5e",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "exact",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/fb.svg",
+      "alt" : "fb",
+      "loading" : "disabled",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    }
+  }, {
+    "id" : "b52e174b-ebd8-5e0b-50c8-38bc768c8bed",
+    "name" : "team_card_icon",
+    "label" : "team_card_icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "b5c3c30e-49d3-e012-9a79-a7f61149db5e",
+      "controlling_value_regex" : "icon",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "Instagram",
+      "unicode" : "f16d",
+      "type" : "REGULAR"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "team_card_icon_image" : {
+      "size_type" : "exact",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/fb.svg",
+      "alt" : "fb",
+      "loading" : "disabled",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    },
+    "team_card_icon" : {
+      "name" : "Instagram",
+      "unicode" : "f16d",
+      "type" : "REGULAR"
+    }
+  }, {
+    "team_card_icon_image" : {
+      "size_type" : "exact",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/fb.svg",
+      "alt" : "fb",
+      "loading" : "disabled",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    },
+    "team_card_icon" : {
+      "name" : "Instagram",
+      "unicode" : "f16d",
+      "type" : "REGULAR"
+    }
+  }, {
+    "team_card_icon_image" : {
+      "size_type" : "exact",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/fb.svg",
+      "alt" : "fb",
+      "loading" : "disabled",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    },
+    "team_card_icon" : {
+      "name" : "Instagram",
+      "unicode" : "f16d",
+      "type" : "REGULAR"
+    }
+  }, {
+    "team_card_icon_image" : {
+      "size_type" : "exact",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/fb.svg",
+      "alt" : "fb",
+      "loading" : "disabled",
+      "width" : 19,
+      "height" : 19,
+      "max_width" : 19,
+      "max_height" : 19
+    },
+    "team_card_icon" : {
+      "name" : "Instagram",
+      "unicode" : "f16d",
+      "type" : "REGULAR"
+    }
+  } ]
+} ]

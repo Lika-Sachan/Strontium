@@ -1,0 +1,155 @@
+[ {
+  "id" : "f92a52a2-fffe-9bed-2c1b-fe23bbd5ab3e",
+  "name" : "vertical_tab_text_group",
+  "label" : "vertical_tab_text_group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "52fcdc37-d1fe-d9e1-eb42-066ffc731fc8",
+    "name" : "vertical_tab_text",
+    "label" : "vertical_tab_text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Tellus pellentesque eu"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "vertical_tab_text" : "Tellus pellentesque eu"
+  }, {
+    "vertical_tab_text" : "Tellus pellentesque eu"
+  }, {
+    "vertical_tab_text" : "Tellus pellentesque eu"
+  }, {
+    "vertical_tab_text" : "Tellus pellentesque eu"
+  }, {
+    "vertical_tab_text" : "Tellus pellentesque eu"
+  } ]
+}, {
+  "id" : "44136793-cb26-8d19-e3b5-1c59b2d70bac",
+  "name" : "vertical_tab_image_group",
+  "label" : "vertical_tab_image_group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "31dcb765-6d1e-c873-1298-69882452205b",
+    "name" : "vertical_tab_image",
+    "label" : "vertical_tab_image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image_placeholder.png",
+      "alt" : "image_placeholder",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 400,
+      "max_width" : 553,
+      "max_height" : 400
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "vertical_tab_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image_placeholder.png",
+      "alt" : "image_placeholder",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 400,
+      "max_width" : 553,
+      "max_height" : 400
+    }
+  }, {
+    "vertical_tab_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image_placeholder.png",
+      "alt" : "image_placeholder",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 400,
+      "max_width" : 553,
+      "max_height" : 400
+    }
+  }, {
+    "vertical_tab_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image_placeholder.png",
+      "alt" : "image_placeholder",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 400,
+      "max_width" : 553,
+      "max_height" : 400
+    }
+  }, {
+    "vertical_tab_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image_placeholder.png",
+      "alt" : "image_placeholder",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 400,
+      "max_width" : 553,
+      "max_height" : 400
+    }
+  }, {
+    "vertical_tab_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image_placeholder.png",
+      "alt" : "image_placeholder",
+      "loading" : "disabled",
+      "width" : 553,
+      "height" : 400,
+      "max_width" : 553,
+      "max_height" : 400
+    }
+  } ]
+}, {
+  "id" : "c5ec8d10-3dce-77c2-6aca-602d27d4fb45",
+  "name" : "vertical_tab_icon",
+  "label" : "vertical_tab_icon",
+  "required" : false,
+  "locked" : false,
+  "icon_set" : "fontawesome-5.14.0",
+  "type" : "icon",
+  "default" : {
+    "name" : "angle-right",
+    "unicode" : "f105",
+    "type" : "SOLID"
+  }
+}, {
+  "id" : "6ce32edf-9426-9200-c758-e339d6839159",
+  "name" : "vertical_tab_color",
+  "label" : "vertical_tab_color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0a57fb",
+    "opacity" : 100
+  }
+} ]

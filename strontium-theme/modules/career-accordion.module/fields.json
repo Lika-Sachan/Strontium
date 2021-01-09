@@ -1,0 +1,164 @@
+[ {
+  "id" : "af86918a-3504-814d-4402-794868ce68a1",
+  "name" : "career_icon_color",
+  "label" : "Career Icon Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#6927ff",
+    "opacity" : 100
+  }
+}, {
+  "id" : "eeee8518-e119-a074-338a-06f944679d17",
+  "name" : "career_list",
+  "label" : "Career List",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "03545cb1-c218-eadd-edb5-db1fd1498a4e",
+    "name" : "career_item_heading",
+    "label" : "Career Item Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Developement"
+  }, {
+    "id" : "5abbfdfa-a687-5809-349c-65cce8320106",
+    "name" : "career_icon",
+    "label" : "Career Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "angle-right",
+      "unicode" : "f105",
+      "type" : "SOLID"
+    }
+  }, {
+    "id" : "615d219c-bda6-bd7a-0eff-ef479c52e93f",
+    "name" : "career_item",
+    "label" : "Career Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "1428334e-bff0-adee-2b09-51c60e7c7769",
+      "name" : "career_heading",
+      "label" : "Career Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Sr. Manager, Partner Engineering"
+    }, {
+      "id" : "31e0545a-b82b-fe9a-33e9-2a4f4d0fb64d",
+      "name" : "career_state",
+      "label" : "Career State",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "remote, united states"
+    }, {
+      "id" : "c1a1d84f-4220-baa0-2ee8-9ffe79b95545",
+      "name" : "career_link",
+      "label" : "Career link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "35b53db5-1cd9-aeb6-20a9-aa0621b0a4ce",
+      "name" : "career_link_icon",
+      "label" : "Career Link icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.14.0",
+      "type" : "icon",
+      "default" : {
+        "name" : "arrow-right",
+        "unicode" : "f061",
+        "type" : "SOLID"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "career_heading" : "Sr. Manager, Partner Engineering",
+      "career_state" : "remote, united states",
+      "career_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "career_link_icon" : {
+        "name" : "arrow-right",
+        "unicode" : "f061",
+        "type" : "SOLID"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "career_item_heading" : "Developement",
+    "career_icon" : {
+      "name" : "angle-right",
+      "unicode" : "f105",
+      "type" : "SOLID"
+    },
+    "career_item" : [ {
+      "career_heading" : "Sr. Manager, Partner Engineering",
+      "career_state" : "remote, united states",
+      "career_link" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "https://www.google.com/",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "career_link_icon" : {
+        "name" : "arrow-right",
+        "unicode" : "f061",
+        "type" : "SOLID"
+      }
+    } ]
+  } ]
+} ]

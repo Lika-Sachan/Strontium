@@ -1,0 +1,40 @@
+<div class="st-vertical-tab">  
+  <div class="st-vertical-tab__wrap">
+    <div class="st-vertical-tab__text-wrap">
+      {% for item in module.vertical_tab_text_group %}
+      <div class="st-vertical-tab__content">
+        <a href="#{{loop.index}}" class="{% if loop.index == '1' %}active{% endif %} st-vertical-tab__text" data-target="{{loop.index}}">{{ item.vertical_tab_text }}</a>
+        <div class="st-vertical-tab__icon">
+          {% icon	name="{{ module.vertical_tab_icon.name }}"	style="{{ module.vertical_tab_icon.type }}"	unicode="{{ module.vertical_tab_icon.unicode }}"	icon_set="{{ module.vertical_tab_icon.icon_set }}"%}
+        </div>      
+      </div>
+      {% endfor %}
+    </div>
+    <div class="st-vertical-tab__image-wrap">
+      {% for item in module.vertical_tab_image_group %}
+      <div id="{{loop.index}}" class="st-vertical-tab__image {% if loop.index == '1' %}show{% endif %}">
+        {% if item.vertical_tab_image.src %}
+        {% set sizeAttrs = 'width="{{ item.vertical_tab_image.width }}" height="{{ item.vertical_tab_image.height }}"' %}
+        {% if item.vertical_tab_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.vertical_tab_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.vertical_tab_image.max_width }}px; max-height: {{ item.vertical_tab_image.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = item.vertical_tab_image.loading != 'disabled' ? 'loading="{{ item.vertical_tab_image.loading }}"' : '' %}
+        <img src="{{ item.vertical_tab_image.src }}" alt="{{ item.vertical_tab_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>  
+</div>
+{% require_css %}
+<style>
+  .active.st-vertical-tab__text{
+    color: {{ module.vertical_tab_color.color }};
+  }
+  .st-vertical-tab__icon {
+    fill: {{ module.vertical_tab_color.color }};    
+  }   
+</style>
+{% end_require_css %}

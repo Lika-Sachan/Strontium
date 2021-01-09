@@ -1,0 +1,123 @@
+[ {
+  "id" : "4569696b-ba61-e294-b737-4354efc0176c",
+  "name" : "counter_with_text",
+  "label" : "Counter With Text",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "children" : [ {
+    "id" : "63e20556-e3b5-ff30-2f00-8134bdfb6ec8",
+    "name" : "counter_number",
+    "label" : "Counter Number",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "250"
+  }, {
+    "id" : "adc8edb9-b875-8148-67e0-a854ade891cf",
+    "name" : "counter_text",
+    "label" : "Counter Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Excepteur sint occaecat fugiat nulla pariatur."
+  }, {
+    "id" : "d4e0b0bc-3814-a0f5-d7a6-904f8f3cf18b",
+    "name" : "counter_font",
+    "label" : "Counter Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "size" : 120,
+      "size_unit" : "px",
+      "color" : "#162c8e",
+      "styles" : { },
+      "variant" : "500",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "counter_number" : "250",
+    "counter_text" : "Excepteur sint occaecat fugiat nulla pariatur.",
+    "counter_font" : {
+      "size" : 120,
+      "size_unit" : "px",
+      "color" : "#162c8e",
+      "styles" : { },
+      "variant" : "500",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }, {
+    "counter_number" : "250",
+    "counter_text" : "Excepteur sint occaecat fugiat nulla pariatur.",
+    "counter_font" : {
+      "size" : 120,
+      "size_unit" : "px",
+      "color" : "#162c8e",
+      "styles" : { },
+      "variant" : "500",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }, {
+    "counter_number" : "250",
+    "counter_text" : "Excepteur sint occaecat fugiat nulla pariatur.",
+    "counter_font" : {
+      "size" : 120,
+      "size_unit" : "px",
+      "color" : "#162c8e",
+      "styles" : { },
+      "variant" : "500",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }, {
+    "counter_number" : "250",
+    "counter_text" : "Excepteur sint occaecat fugiat nulla pariatur.",
+    "counter_font" : {
+      "size" : 120,
+      "size_unit" : "px",
+      "color" : "#162c8e",
+      "styles" : { },
+      "variant" : "500",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }, {
+    "counter_number" : "250",
+    "counter_text" : "Excepteur sint occaecat fugiat nulla pariatur.",
+    "counter_font" : {
+      "size" : 120,
+      "size_unit" : "px",
+      "color" : "#162c8e",
+      "styles" : { },
+      "variant" : "500",
+      "font" : "Poppins",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  } ]
+} ]

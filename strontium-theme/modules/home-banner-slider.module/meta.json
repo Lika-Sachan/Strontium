@@ -1,0 +1,34 @@
+{
+  "global" : false,
+  "smart_type" : "NOT_SMART",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 40261449899,
+  "css_assets" : [ {
+    "autoload" : true,
+    "path" : "../../css/libraries/owl-theme-default.css",
+    "name" : "owl-theme-default.css"
+  }, {
+    "autoload" : true,
+    "path" : "../../css/libraries/owl-carousel-min.css",
+    "name" : "owl-carousel-min.css"
+  }, {
+    "autoload" : true,
+    "path" : "../../css/libraries/owl-carousel.css",
+    "name" : "owl-carousel.css"
+  } ],
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/jquery.js",
+    "name" : "jquery.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../js/Owl Carousel/owl-carousel-min.js",
+    "name" : "owl-carousel-min.js"
+  }, {
+    "autoload" : true,
+    "path" : "../../js/Owl Carousel/owl-carousel.js",
+    "name" : "owl-carousel.js"
+  } ],
+  "label" : "Home Banner Slider",
+  "is_available_for_new_content" : true
+}

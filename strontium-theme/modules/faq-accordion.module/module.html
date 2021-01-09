@@ -1,0 +1,21 @@
+<div class="st-accordian">
+  <div class="st-accordion__wrapper">
+    <a class="st-accordian__heading" href="#">{{ module.accordion_heading }}
+
+    </a>
+    <div class="st-accordion__content">
+      <p>{{ module.accordion_content }}</p>
+    </div>
+  </div>
+</div>
+{% require_css %}
+
+<style>
+  .st-accordian__heading.active {
+    background-color: {{ module.background_color.color }};
+  }
+  .st-accordian__heading::before {
+    color: {{ module.background_color.color }};
+  }
+</style>
+{% end_require_css %}

@@ -1,0 +1,61 @@
+<div class="st-banner-slider">
+  <div class="st-banner-slider__container">
+    <div class="st-banner-slider__slide owl-carousel owl-theme">
+      {% for item in module.banner_slider %}
+      <div class="st-banner-slider__slide-item items" {% if item.banner_slider_image.src %} style="background-image:url('{{ item.banner_slider_image.src  }}')"{% endif %}>
+        <div class="st-banner-slider__slide-content">
+          
+          {% set bgColor= module.banner_slider_overlay_color.color %}
+          {% set bgOpacity= module.banner_slider_overlay_color.opacity %}
+          {% if bgOpacity<=100 %}
+          {% set bgColorOpacity=(bgOpacity/100)%}
+          {% endif %}
+          <div class="st-banner-slider__slide-text-wrap" style="background-color:rgba({{bgColor|convert_rgb}},{{ bgColorOpacity}})">
+            <div class="st-banner-slider__slide-text">
+              <h2 class="st-banner-slider__slide-title">
+                {{ item.banner_slider_title }}
+              </h2>
+              <div class="st-banner-slider__slide-info">
+                {{ item.banner_slider_text }}
+              </div>
+              <div class="st-banner-slider__slide-cta">
+                {% if item.banner_slider_button_type == "cta" %}
+                {% cta guid="{{ item.banner_slider_cta }}" %}
+                {% elif item.banner_slider_button_type == "btn" %}
+                {% set href = item.button.banner_slider_button_link.url.href %}
+                {% if item.button.banner_slider_button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                {% set rel = [] %}
+                {% if item.button.banner_slider_button_link.no_follow %}
+                {% do rel.append("nofollow") %}
+                {% endif %}
+                {% if item.button.banner_slider_button_link.open_in_new_tab %}
+                {% do rel.append("noopener") %}
+                {% endif %}
+                <a href="{{ href }}"
+                   {% if item.button.banner_slider_button_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                   >
+                  {{ item.button.banner_slider_button_text }}
+                </a>
+                {% endif %}
+              </div>
+              <div class="st-banner-slider__slide-learn-more">
+                {{ item.banner_slider_learn_more }}
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>

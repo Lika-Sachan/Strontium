@@ -1,0 +1,21 @@
+<div id="{{name}}" class="st-spacer">
+</div>
+{% require_css %}
+<style>
+  #{{name}} .st-spacer {
+    height: {{ module.height_mobile_ }}px;
+    background-color: rgba({{ module.background_color.color }},{{ module.background_color.opacity }})
+  }
+  @media only screen and (min-width: 768px) {
+    #{{name}} .st-spacer {
+      height: {{ module.height_tablet_ }}px;
+      
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    #{{name}}.mwb-spacer {
+      height: {{ module.height_desktop_ }}px;
+    }
+  }
+</style>
+{% end_require_css %}

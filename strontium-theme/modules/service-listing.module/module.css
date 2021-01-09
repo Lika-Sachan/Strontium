@@ -1,0 +1,52 @@
+.st-image-hover {
+    cursor: pointer;
+    max-width: 219px;
+    position: relative;
+}
+.st-image-hover__image {
+    display: flex;
+}
+.st-image-hover__image img {
+    border-radius: 10px;
+}
+.st-image-hover__content {
+    align-items: center;
+    border-radius: 10px;
+    content: '';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    height: 100%;
+    justify-content: flex-end;
+    opacity: 0;
+    position: absolute;  
+    top: 0;    
+    transition:  0.3s linear all;
+    width: 100%;
+}
+.st-image-hover:hover .st-image-hover__content{
+    opacity: 1;
+    transition:  0.3s linear all;
+}
+.st-image-hover__content-icon {
+    fill: #ffffff;
+    margin-bottom: 11px;
+    max-height: 40px;
+    transform: translateY(-100%);
+    transition: 0.3s linear all;
+    width: 40px;
+}
+.st-image-hover:hover .st-image-hover__content-icon{
+    transform: none;
+    transition:  0.3s linear all;
+}
+.st-image-hover__content-text {
+    color: #ffffff;
+    margin-bottom: 17px; 
+    transform: translateY(100%);
+    transition:  0.3s linear all;
+}
+.st-image-hover:hover .st-image-hover__content-text{
+    transform: none;
+    transition:  0.3s linear all;
+}

@@ -1,0 +1,31 @@
+[ {
+  "id" : "6d55c522-e82b-2fa1-57a4-5a5067993cbd",
+  "name" : "accordion_heading",
+  "label" : "Accordion Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What Is Your Question?"
+}, {
+  "id" : "50120623-668f-2d2f-4c77-7012f35fbf6d",
+  "name" : "accordion_content",
+  "label" : "Accordion Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Vel eros donec ac odio tempor orci. Sapien et ligula ullamcorper malesuada proin libero. Purus sit amet luctus venenatis lectus magna fringilla. Posuere urna nec tincidunt praesent semper feugiat. Risus quis varius quam quisque id diam vel. Etiam tempor orci eu lobortis elementum nibh tellus. Pulvinar sapien et ligula ullamcorper. Vehicula ipsum a arcu cursus vitae congue.</p>"
+}, {
+  "id" : "5b265aad-51fc-b37b-0757-416b583b3af5",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#0A57FB",
+    "opacity" : 100
+  }
+} ]

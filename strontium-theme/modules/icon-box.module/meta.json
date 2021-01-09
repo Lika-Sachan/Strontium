@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "smart_type" : "NOT_SMART",
+  "icon" : "fontawesome-5.14.0:home:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 39552533546,
+  "label" : "Icon Box",
+  "is_available_for_new_content" : true
+}

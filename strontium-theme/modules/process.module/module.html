@@ -1,0 +1,43 @@
+<div class="st-process">
+  {% for item in module.process %}
+  <div class="st-process__list" style="text-align: {{ item.text_alignment }}">
+    {% set bgColor= item.process_icon_bg_color.color  %}
+    {% set bgOpacity= item.process_icon_bg_color.opacity %}
+    {% if bgOpacity<=100 %}
+    {% set bgColorOpacity=(bgOpacity/100)%}
+    {% endif %}
+    {% if item.icon_or_image == 'icons' %}
+    <div class="st-process__list-icon" data-fill='{{ item.icon.process_icon_color.color }}'>
+      <span style="background-color: rgba({{ bgColor|convert_rgb }},{{ bgColorOpacity }})">
+        {% icon name="{{ item.icon.process_icon.name }}" style="{{ item.icon.process_icon.type }}" unicode="{{ item.icon.process_icon.unicode }}" icon_set="{{ item.icon.process_icon.icon_set }}" %}
+      </span>   
+    </div>
+    {% else if item.icon_or_image == 'images' %}
+    <div class="st-process__list-image">
+      <span style="background-color: rgba({{ bgColor|convert_rgb }},{{ bgColorOpacity }})">
+        {% if item.process_image.src %}
+        {% set sizeAttrs = 'width="{{ item.process_image.width }}" height="{{ item.process_image.height }}"' %}
+        {% if item.process_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.process_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ item.process_image.max_width }}px; max-height: {{ item.process_image.max_height }}px"' %}
+        {% endif %}
+        {% set loadingAttr = item.process_image.loading != 'disabled' ? 'loading="{{ item.process_image.loading }}"' : '' %}
+        <img src="{{ item.process_image.src }}" alt="{{ item.process_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+
+        {% endif %}
+      </span>
+    </div>
+    {% endif %}
+    <div class="st-process__list-content">
+      <div class="st-process__list-title">
+        <h4>{{ item.process_title }}</h4>
+      </div>
+      <div class="st-process__list-text">
+        <p>{{ item.process_text }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>

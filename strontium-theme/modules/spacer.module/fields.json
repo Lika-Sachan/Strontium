@@ -1,0 +1,48 @@
+[ {
+  "id" : "cd27a073-9703-0f21-c329-a64241e2bb87",
+  "name" : "height_desktop_",
+  "label" : "Height(Desktop)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 10,
+  "max" : 500,
+  "step" : 5,
+  "type" : "number",
+  "default" : 80
+}, {
+  "id" : "c49cce2d-5d85-7fb3-266d-f2daca27d58c",
+  "name" : "height_tablet_",
+  "label" : "Height(Tablet)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 10,
+  "max" : 500,
+  "step" : 5,
+  "type" : "number",
+  "default" : 50
+}, {
+  "id" : "ee37a43f-b488-8b11-abf1-b404cc2746b9",
+  "name" : "height_mobile_",
+  "label" : "Height(Mobile)",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 10,
+  "max" : 500,
+  "step" : 5,
+  "type" : "number",
+  "default" : 40
+}, {
+  "id" : "ca20c7dc-fef6-7871-c1ad-cca4ef053b40",
+  "name" : "background_color",
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#ffffff",
+    "opacity" : 100
+  }
+} ]

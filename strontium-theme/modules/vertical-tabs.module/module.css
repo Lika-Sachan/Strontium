@@ -1,0 +1,38 @@
+.st-vertical-tab__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.st-vertical-tab__text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.st-vertical-tab__icon{
+    display:none;
+}
+.st-vertical-tab__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.st-vertical-tab__text {
+    text-decoration: none;
+}
+.st-vertical-tab__icon {
+    display: none;
+    margin-left: 5px;
+    width: 5px;
+}
+.active.st-vertical-tab__text + .st-vertical-tab__icon {
+    display: block;
+}
+.st-vertical-tab__image-wrap {
+    flex: 0 0 50%;
+}
+.st-vertical-tab__image.show {
+    display: block;
+}
+.st-vertical-tab__image {
+    display: none;
+}

@@ -1,0 +1,250 @@
+[ {
+  "id" : "ccb01c2c-fbf9-ad28-50f4-08698fa21939",
+  "name" : "banner_slider",
+  "label" : "Banner Slider",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "e6fa83ce-9ec9-8b82-a40e-b84e5a68d272",
+    "name" : "banner_slider_image",
+    "label" : "Banner Slider Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2017.png",
+      "alt" : "image 17",
+      "loading" : "disabled",
+      "width" : 1366,
+      "height" : 624,
+      "max_width" : 1366,
+      "max_height" : 624
+    }
+  }, {
+    "id" : "2e5ad02e-76ac-ee7b-fefc-a962d1f5df8e",
+    "name" : "banner_slider_title",
+    "label" : "Banner Slider Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "We Build Strong And Beautiful themes,Just Like Strontium."
+  }, {
+    "id" : "bda6095e-2032-d6ec-b5d2-f1621d74cdc8",
+    "name" : "banner_slider_text",
+    "label" : "Banner Slider Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>"
+  }, {
+    "id" : "e8fc20ff-8e77-7df1-1c53-29f19b768ae5",
+    "name" : "banner_slider_button_type",
+    "label" : "Banner Slider Button Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "cta", "CTA" ], [ "btn", "Link Button" ] ],
+    "type" : "choice",
+    "default" : "cta"
+  }, {
+    "id" : "6021a644-b250-3558-3dd2-e6653cb5f7da",
+    "name" : "banner_slider_cta",
+    "label" : "Banner Slider CTA",
+    "required" : false,
+    "locked" : false,
+    "type" : "cta",
+    "default" : "5166fd12-14a1-45cc-b6cb-5e85605b25c3"
+  }, {
+    "id" : "ae56c53e-dac8-c5f5-8fc8-776cee5df473",
+    "name" : "button",
+    "label" : "Button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "e4644501-d22a-b1cb-d3ea-ea6f37363301",
+      "name" : "banner_slider_button_text",
+      "label" : "Banner Slider Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "ecc018a7-e9c4-fcc6-4113-49ab0be5c6ff",
+      "name" : "banner_slider_button_link",
+      "label" : "Banner Slider Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "banner_slider_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "71ef51b6-4245-48e7-1cc7-ec92f5170703",
+    "name" : "banner_slider_learn_more",
+    "label" : "Banner Slider Learn More",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Need some more info?<a href=\"#\">learn more</a>.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "banner_slider_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2017.png",
+      "alt" : "image 17",
+      "loading" : "disabled",
+      "width" : 1366,
+      "height" : 624,
+      "max_width" : 1366,
+      "max_height" : 624
+    },
+    "banner_slider_title" : "We Build Strong And Beautiful themes,Just Like Strontium.",
+    "banner_slider_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>",
+    "banner_slider_button_type" : "cta",
+    "banner_slider_cta" : "5166fd12-14a1-45cc-b6cb-5e85605b25c3",
+    "button" : {
+      "banner_slider_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "banner_slider_learn_more" : "<p>Need some more info?<a href=\"#\">learn more</a>.</p>"
+  }, {
+    "banner_slider_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2017.png",
+      "alt" : "image 17",
+      "loading" : "disabled",
+      "width" : 1366,
+      "height" : 624,
+      "max_width" : 1366,
+      "max_height" : 624
+    },
+    "banner_slider_title" : "We Build Strong And Beautiful themes,Just Like Strontium.",
+    "banner_slider_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>",
+    "banner_slider_button_type" : "cta",
+    "banner_slider_cta" : "5166fd12-14a1-45cc-b6cb-5e85605b25c3",
+    "button" : {
+      "banner_slider_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "banner_slider_learn_more" : "<p>Need some more info?<a href=\"#\">learn more</a>.</p>"
+  }, {
+    "banner_slider_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2017.png",
+      "alt" : "image 17",
+      "loading" : "disabled",
+      "width" : 1366,
+      "height" : 624,
+      "max_width" : 1366,
+      "max_height" : 624
+    },
+    "banner_slider_title" : "We Build Strong And Beautiful themes,Just Like Strontium.",
+    "banner_slider_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>",
+    "banner_slider_button_type" : "cta",
+    "banner_slider_cta" : "5166fd12-14a1-45cc-b6cb-5e85605b25c3",
+    "button" : {
+      "banner_slider_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "banner_slider_learn_more" : "<p>Need some more info?<a href=\"#\">learn more</a>.</p>"
+  }, {
+    "banner_slider_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/image%2017.png",
+      "alt" : "image 17",
+      "loading" : "disabled",
+      "width" : 1366,
+      "height" : 624,
+      "max_width" : 1366,
+      "max_height" : 624
+    },
+    "banner_slider_title" : "We Build Strong And Beautiful themes,Just Like Strontium.",
+    "banner_slider_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>",
+    "banner_slider_button_type" : "cta",
+    "banner_slider_cta" : "5166fd12-14a1-45cc-b6cb-5e85605b25c3",
+    "button" : {
+      "banner_slider_button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "banner_slider_learn_more" : "<p>Need some more info?<a href=\"#\">learn more</a>.</p>"
+  } ]
+}, {
+  "id" : "f0826ca4-9b32-0258-cf3b-f0fc53161377",
+  "name" : "banner_slider_overlay_color",
+  "label" : "Banner Slider Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#242A3F",
+    "opacity" : 60
+  }
+} ]

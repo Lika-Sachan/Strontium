@@ -1,0 +1,17 @@
+.st-form {
+  position: relative;
+}
+.st-form__attach-file-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(50%);
+}
+.st-form__attach-file-wrap--icon {
+  transform: rotate(-45deg);
+  width: 20px;
+}

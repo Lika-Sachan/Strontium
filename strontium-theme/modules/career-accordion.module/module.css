@@ -1,0 +1,71 @@
+.st-career__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.st-career-accordion__content {
+  display: none;
+  padding: 15px 0;
+}
+.st-career__list-item {
+  border-bottom: 1px solid #5B5F6F;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.st-career__list-item-heading, .st-career__list-item-state {
+  color: #92959F;
+  flex: 0 0 50%;
+  font-weight: 400;
+  margin: 0;
+  max-width: 50%;
+}
+.st-career__list-item-heading {
+  padding-bottom: 10px;
+}
+.st-career__list-item-state {
+  text-align: right;
+}
+.st-career__list-item-link {
+  align-items: center;
+  color: #0A57FB;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  font-weight: 700;
+  max-width: 100%;
+}
+.st-career__list-item-link svg {
+  height: 15px;
+  padding: 5px 0 0 5px;
+  width: 16px;
+}
+.st-career-accordion__header {
+  border-bottom: 1px solid #5B5F6F;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+.st-career-accordion__heading {
+  color: #000000;
+  flex: 0 0 90%;
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 90%;
+  text-decoration: none;
+}
+.st-career-accordion__icon {
+  flex: 0 0 10%;
+  max-width: 10%;
+  text-align: end;
+}
+.st-career-accordion__icon svg {
+  height: 16px;
+  transition: 0.3s linear all;
+  width: 16px;
+}
+.st-career-accordion__header.active .st-career-accordion__icon svg {
+  transform: rotate(90deg);
+  transition: 0.3s linear all;
+}

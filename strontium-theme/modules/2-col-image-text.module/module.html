@@ -1,0 +1,21 @@
+<div class="st-two-col-img-text">
+  <div class="st-two-col-img-text__wrap {% if module.reverse_order %}  st-two-col-img-text__row-reverse {% endif %}">
+    <div class="st-two-col-img-text__col st-two-col-img-text__text">
+
+      <h3>{{ module.column_title }}</h3>  
+      <p>{{ module.column_text }}</p>
+    </div>
+    <div class="st-two-col-img-text__col st-two-col-img-text__image">
+      {% if module.column_image.src %}
+      {% set sizeAttrs = 'width="{{ module.column_image.width }}" height="{{ module.column_image.height }}"' %}
+      {% if module.column_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif module.column_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.column_image.max_width }}px; max-height: {{ module.column_image.max_height }}px"' %}
+      {% endif %}
+      {% set loadingAttr = module.column_image.loading != 'disabled' ? 'loading="{{ module.column_image.loading }}"' : '' %}
+      <img src="{{ module.column_image.src }}" alt="{{ module.column_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+    </div>
+  </div>
+</div>

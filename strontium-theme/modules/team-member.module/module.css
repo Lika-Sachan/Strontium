@@ -1,0 +1,28 @@
+.st-team-member__img img {
+  height: 128px;
+  width: 128px;
+}
+.st-team-member__info-name {
+  color: #242A3F;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.st-team-member__social-icon a {
+  border-radius: 50%;
+  border: 2px solid #74B2FD;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 17px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 32px;
+}
+.st-team-member__social-icon a svg {
+  fill: #74B2FD;
+  height: 15px;
+  width: 15px;
+}

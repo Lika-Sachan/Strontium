@@ -1,0 +1,9 @@
+{
+  "global" : false,
+  "smart_type" : "NOT_SMART",
+  "icon" : "fontawesome-5.14.0:Alternate%20List",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 39776128309,
+  "label" : "Service Listing",
+  "is_available_for_new_content" : true
+}

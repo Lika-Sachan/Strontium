@@ -1,0 +1,10 @@
+.st-icon-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.st-icon-box__icon {
+    width: 24px;
+}
+.st-icon-box__text {
+    margin-left: 15px;
+}

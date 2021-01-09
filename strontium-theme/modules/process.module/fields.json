@@ -1,0 +1,243 @@
+[ {
+  "id" : "21258f2f-938e-f900-93fe-bf1521d01593",
+  "name" : "process",
+  "label" : "Process",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "5e02517c-093a-2ef7-cc58-0d9cafe00acd",
+    "name" : "icon_or_image",
+    "label" : "Icon Or Image",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "icon", "icon" ], [ "image", "image" ] ],
+    "type" : "choice",
+    "default" : "image"
+  }, {
+    "id" : "382ed199-d383-57fc-29c1-6d95f5cc585b",
+    "name" : "process_image",
+    "label" : "Process Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "5e02517c-093a-2ef7-cc58-0d9cafe00acd",
+      "controlling_value_regex" : "image",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/pen-tool.png",
+      "alt" : "pen-tool",
+      "loading" : "disabled",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    }
+  }, {
+    "id" : "7ac96763-84bd-7569-5b7c-5a52b7fc6011",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "5e02517c-093a-2ef7-cc58-0d9cafe00acd",
+      "controlling_value_regex" : "icon",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "children" : [ {
+      "id" : "f14a114c-4cf7-c68b-967d-bb923edca218",
+      "name" : "process_icon",
+      "label" : "Process Icon",
+      "required" : false,
+      "locked" : false,
+      "icon_set" : "fontawesome-5.14.0",
+      "type" : "icon",
+      "default" : { }
+    }, {
+      "id" : "c73d6574-becd-02c3-7020-8f66d878b58d",
+      "name" : "process_icon_color",
+      "label" : "Process Icon Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "process_icon" : { },
+      "process_icon_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "7b53bd60-c8f7-9d0a-6a9b-bdba793c4314",
+    "name" : "process_title",
+    "label" : "Process Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Step 1"
+  }, {
+    "id" : "f434229b-dde9-4b64-068d-f45a194c6228",
+    "name" : "process_text",
+    "label" : "Process Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sagittis eu volutpat odio facilisis. Tortor condimentum lacinia quis vel eros. Elit ut aliquam purus sit amet luctus.</p>"
+  }, {
+    "id" : "7fbae5cf-f109-1d61-83f5-0ff176c55c96",
+    "name" : "text_alignment",
+    "label" : "Text Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "left" ], [ "right", "right" ], [ "center", "center" ] ],
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "82a257dc-1da4-c7de-0800-56aefdae5e0d",
+    "name" : "process_icon_bg_color",
+    "label" : "Process Icon Bg Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#C0DAF9",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon_or_image" : "image",
+    "process_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/pen-tool.png",
+      "alt" : "pen-tool",
+      "loading" : "disabled",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    },
+    "icon" : {
+      "process_icon" : { },
+      "process_icon_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "process_title" : "Step 1",
+    "process_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sagittis eu volutpat odio facilisis. Tortor condimentum lacinia quis vel eros. Elit ut aliquam purus sit amet luctus.</p>",
+    "text_alignment" : "left",
+    "process_icon_bg_color" : {
+      "color" : "#C0DAF9",
+      "opacity" : 100
+    }
+  }, {
+    "icon_or_image" : "image",
+    "process_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/pen-tool.png",
+      "alt" : "pen-tool",
+      "loading" : "disabled",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    },
+    "icon" : {
+      "process_icon" : { },
+      "process_icon_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "process_title" : "Step 1",
+    "process_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sagittis eu volutpat odio facilisis. Tortor condimentum lacinia quis vel eros. Elit ut aliquam purus sit amet luctus.</p>",
+    "text_alignment" : "left",
+    "process_icon_bg_color" : {
+      "color" : "#C0DAF9",
+      "opacity" : 100
+    }
+  }, {
+    "icon_or_image" : "image",
+    "process_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/pen-tool.png",
+      "alt" : "pen-tool",
+      "loading" : "disabled",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    },
+    "icon" : {
+      "process_icon" : { },
+      "process_icon_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "process_title" : "Step 1",
+    "process_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sagittis eu volutpat odio facilisis. Tortor condimentum lacinia quis vel eros. Elit ut aliquam purus sit amet luctus.</p>",
+    "text_alignment" : "left",
+    "process_icon_bg_color" : {
+      "color" : "#C0DAF9",
+      "opacity" : 100
+    }
+  }, {
+    "icon_or_image" : "image",
+    "process_image" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent40.net/hubfs/7479791/pen-tool.png",
+      "alt" : "pen-tool",
+      "loading" : "disabled",
+      "width" : 24,
+      "height" : 24,
+      "max_width" : 24,
+      "max_height" : 24
+    },
+    "icon" : {
+      "process_icon" : { },
+      "process_icon_color" : {
+        "color" : "#ffffff",
+        "opacity" : 100
+      }
+    },
+    "process_title" : "Step 1",
+    "process_text" : "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sagittis eu volutpat odio facilisis. Tortor condimentum lacinia quis vel eros. Elit ut aliquam purus sit amet luctus.</p>",
+    "text_alignment" : "left",
+    "process_icon_bg_color" : {
+      "color" : "#C0DAF9",
+      "opacity" : 100
+    }
+  } ]
+} ]

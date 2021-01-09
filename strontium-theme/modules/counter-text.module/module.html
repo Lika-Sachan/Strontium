@@ -1,0 +1,16 @@
+<div class="st-counter">
+  <div class="st-counter__wrap">
+    <div class="st-counter__list">
+      {% for item in module.counter_with_text %}
+      <div class="st-counter__list-item">
+        <div class="st-counter__count-number">
+          <span style="font-family: {{ item.counter_font.font }}; {{ item.counter_font.style }}; color: {{ item.counter_font.color }}; font-size: {{ item.counter_font.size }}{{item.counter_font.size_unit }};">{{ item.counter_number }}</span>
+        </div>
+        <div class="st-counter__counter-text">
+          <span> {{ item.counter_text }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="st-team-member" style="text-align: {{ module.text_align_choice }}">
+  {% if module.team_member_image.src %}
+
+  <div class="st-team-member__img">
+    {% set sizeAttrs = 'width="{{ module.team_member_image.width }}" height="{{ module.team_member_image.height }}"' %}
+    {% if module.team_member_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+    {% elif module.team_member_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.team_member_image.max_width }}px; max-height: {{ module.team_member_image.max_height }}px"' %}
+    {% endif %}
+    {% set loadingAttr = module.team_member_image.loading != 'disabled' ? 'loading="{{ module.team_member_image.loading }}"' : '' %}
+    <img src="{{ module.team_member_image.src }}" alt="{{ module.team_member_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  </div>
+  {% endif %}
+  <div class="st-team-member__info">
+    <h3 class="st-team-member__info-name">
+      {{ module.team_member_name }}
+    </h3>
+    <div class="st-team-member__info-title">
+      {{ module.team_member_job_title }}
+    </div>
+    <div class="st-team-member__info-bio">
+      {{ module.team_member_bio }}
+    </div>
+    {% if module.team_show_icons %}
+    <div class="st-team-member__social-icon">
+      {% for item in module.social_icons %}
+      <a href= "{{ item.social_icon_link.url.href }}" data-bg-color='{{ module.social_icon_bg_color }}' data-color='{{ module.Social_Icon_Color }}' style="border-color:{{ module.social_icons_border_color }} "
+         {% if item.Social_Icon_Link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
+        {% icon
+		name="{{ item.social_icon.name }}"
+		style="{{ item.social_icon.type }}"
+		unicode="{{ item.social_icon.unicode }}"
+		icon_set="{{ item.social_icon.icon_set }}"
+	%}
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  .st-team-member__img img  {
+    border-radius: {{ module.team_member_img_border_radius }}%;
+  }
+</style>
+{% end_require_css %}

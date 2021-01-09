@@ -1,0 +1,24 @@
+.st-two-col-img-text {
+  margin: 0 0 50px 0;
+}
+.st-two-col-img-text__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.st-two-col-img-text__row-reverse {
+  flex-direction: row-reverse;
+}
+
+.st-two-col-img-text__col {
+  flex: 0 0 100%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+@media (max-width: 992px) {
+  .st-two-col-img-text__col {
+    max-width: 100%;
+  }
+}

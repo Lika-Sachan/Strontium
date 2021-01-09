@@ -1,0 +1,26 @@
+<div class="owl-carousel owl-theme st-testimonial-slider">
+ {% for item in module.testimonial_item %}
+  <div class="st-testimonial-slider__item">
+    <div class="st-testimonial-slider__item-img" style="fill: {{ module.testimonial_quote_color.color }}" >
+     {% icon
+		name="{{ item.testimonial_icon.name }}"
+		style="{{ item.testimonial_icon.type }}"
+		unicode="{{ item.testimonial_icon.unicode }}"
+		icon_set="{{ item.testimonial_icon.icon_set }}"
+	%}     </div>
+    <div class="st-testimonial-slider__item-details">
+     {{ item.testimonial_content }}
+      <h3>{{ item.testimonial_title }}</h3>
+      <h4>{{ item.testimonial_Desg }} </h4>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% require_css %}
+<style>
+  .st-testimonial-slider__item-img svg  {
+    background: {{ module.testimonial_quote_bg_color.color }};
+  }
+</style>
+{% end_require_css %}
